@@ -4,13 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grande Invitation - CCR Pau</title>
-    <link rel="stylesheet" href="style-gospel.css">
+    <style>
+        /* --- TOUT LE CODE EST ICI MAINTENANT --- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 450px;
+            background-color: #2e004f !important;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        /* LOGO CENTRÉ */
+        .header-logo {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-img {
+            height: 45px !important;
+            width: auto;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .form-section {
+            padding: 25px;
+            text-align: center;
+            background-color: #2e004f !important;
+        }
+
+        /* FORÇAGE DU BLANC SUR TOUT */
+        h3, p, label, .subtitle {
+            color: #FFFFFF !important;
+            fill: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+        }
+
+        h3 { font-size: 24px; margin-bottom: 10px; }
+        .subtitle { font-size: 14px; margin-bottom: 25px; display: block; }
+
+        .field { text-align: left; margin-bottom: 20px; }
+
+        /* NOM COMPLET, EMAIL, TEL EN BLANC */
+        label {
+            display: block !important;
+            font-weight: bold !important;
+            font-size: 15px !important;
+            margin-bottom: 8px !important;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: none !important;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            background-color: #FFFFFF !important;
+            color: #333333 !important;
+        }
+
+        button {
+            width: 100%;
+            background-color: #00c2cb !important;
+            color: #FFFFFF !important;
+            border: none;
+            padding: 18px;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
     <div class="app-container">
         <div class="header-logo">
-            <img src="logo.jpg" alt="Logo" class="logo-img">
+            <img src="logo.png" alt="Logo" class="logo-img">
         </div>
 
         <img src="affiche.jpg" alt="Affiche" class="hero-image">
@@ -19,7 +108,7 @@
             <h3>INSCRIPTION</h3>
             <p class="subtitle">Veuillez remplir vos informations ci-dessous</p>
 
-            <form id="gospelForm" action="https://formspree.io/f/VOTRE_ID" method="POST">
+            <form action="https://formspree.io/f/VOTRE_ID" method="POST">
                 <div class="field">
                     <label>Nom complet</label>
                     <input type="text" name="nom" placeholder="Votre nom et prénom" required>
@@ -40,6 +129,5 @@
         </div>
     </div>
 
-    <script src="script-gospel.js"></script>
 </body>
 </html>
