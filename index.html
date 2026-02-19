@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitation CCR Pau</title>
+    <title>Grande Invitation - CCR Pau</title>
     <link rel="stylesheet" href="style-gospel.css">
 </head>
 <body>
 
-    <div class="main-wrapper">
-        <div class="top-bar">
-            <img src="logo.jpg" alt="Logo" class="mini-logo">
+    <div class="app-container">
+        <header class="header-logo">
+            <img src="logo.png" alt="Logo CCR Pau" class="logo-img">
+        </header>
+
+        <div class="affiche-wrapper">
+            <img src="affiche.jpg" alt="Grande Invitation" class="affiche-img">
         </div>
 
-        <img src="affiche.jpg" alt="Grande Invitation" class="hero-image">
+        <div class="form-section">
+            <h3>INSCRIPTION</h3>
+            <p class="subtitle">Veuillez remplir vos informations ci-dessous</p>
 
-        <div class="form-container">
-            <h2>INSCRIPTION</h2>
-            <p>Veuillez remplir vos informations</p>
-            
             <form id="gospelForm" action="https://formspree.io/f/VOTRE_ID" method="POST">
-                <input type="text" name="name" id="nom" placeholder="Nom complet" required>
-                <input type="email" name="email" id="email" placeholder="Votre Email" required>
-                <input type="tel" name="phone" placeholder="Téléphone">
+                <div class="field">
+                    <label>Nom complet</label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom et prénom" required>
+                </div>
+
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="votre@email.com" required>
+                </div>
+
+                <div class="field">
+                    <label>Téléphone (Optionnel)</label>
+                    <input type="tel" name="telephone" placeholder="06 00 00 00 00">
+                </div>
+
                 <button type="submit" id="btnEnvoyer">JE M'INSCRIS</button>
             </form>
         </div>
