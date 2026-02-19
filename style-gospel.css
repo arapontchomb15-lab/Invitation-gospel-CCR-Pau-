@@ -1,57 +1,56 @@
-/* --- LA SECTION FORMULAIRE --- */
+/* --- LE CONTENEUR PRINCIPAL --- */
+.app-container {
+    width: 100%;
+    max-width: 400px; /* On réduit un peu pour que ce soit compact et pro */
+    background-color: #2e004f; /* Le violet de l'affiche */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Centre le bloc sur l'écran */
+    overflow: hidden; /* Empêche les éléments de dépasser */
+}
+
+/* --- L'AFFICHE --- */
+.affiche-wrapper {
+    width: 100%; /* L'image prend toute la largeur du bloc */
+    padding: 0;
+    margin: 0;
+}
+
+.affiche-img {
+    width: 100%; /* Force l'image à faire exactement la largeur du conteneur */
+    height: auto;
+    display: block;
+}
+
+/* --- LA SECTION INFO (FORMULAIRE) --- */
 .form-section {
-    padding: 30px 25px;
+    width: 100%; /* Aligné sur la largeur de l'image */
+    padding: 25px; /* Espace intérieur pour que le texte ne touche pas les bords */
+    box-sizing: border-box; /* Très important : inclut le padding dans la largeur */
     text-align: center;
-    background-color: #2e004f; /* On met le même violet que l'affiche pour l'unité */
 }
 
-h3 { 
-    margin: 0; 
-    font-size: 22px; 
-    color: #ffffff; /* BLANC pour le titre INSCRIPTION */
-    letter-spacing: 1px;
-}
-
-.subtitle { 
-    font-size: 14px; 
-    color: #eeeeee; /* Blanc cassé pour le sous-titre */
-    margin-bottom: 25px; 
-}
-
-.field { 
-    text-align: left; 
-    margin-bottom: 15px; 
-}
-
-.field label { 
-    display: block; 
-    font-size: 13px; 
-    font-weight: bold; 
-    margin-bottom: 5px; 
-    color: #ffffff; /* BLANC pour les étiquettes (Nom, Email...) */
-}
-
+/* --- LES CHAMPS (INPUTS) --- */
 input {
-    width: 100%;
+    width: 100%; /* Les cases font la même largeur que le texte au-dessus */
     padding: 12px;
-    border: 1px solid #ddd;
+    margin-top: 5px;
     border-radius: 6px;
+    border: none;
     font-size: 16px;
-    box-sizing: border-box;
-    background-color: #ffffff; /* On garde le fond des cases en blanc pour écrire dedans */
-    color: #333333; /* Le texte que l'utilisateur tape sera noir */
+    box-sizing: border-box; /* Aligne parfaitement les cases avec les bords */
+    background-color: #FFFFFF;
 }
 
-/* LE BOUTON TURQUOISE */
+/* --- LE BOUTON --- */
 button {
-    width: 100%;
-    background-color: #00a8af;
-    color: white;
+    width: 100%; /* Le bouton fait la même largeur que les cases */
+    background-color: #00c2cb;
+    color: #FFFFFF !important;
     border: none;
-    padding: 16px;
-    font-size: 16px;
+    padding: 15px;
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
 }
