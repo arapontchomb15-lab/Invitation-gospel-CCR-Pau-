@@ -1,62 +1,33 @@
-/* --- MISE EN PAGE GLOBALE --- */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
+/* --- LA SECTION FORMULAIRE --- */
+.form-section {
+    padding: 30px 25px;
+    text-align: center;
+    background-color: #2e004f; /* On met le même violet que l'affiche pour l'unité */
 }
-
-.app-container {
-    width: 100%;
-    max-width: 450px;
-    background-color: #2e004f; /* Fond violet pour tout le bloc */
-    display: flex;
-    flex-direction: column;
-}
-
-/* --- LOGO (CORRIGÉ : PLUS PETIT) --- */
-.header-logo {
+header-logo {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 10px 15px;
+    padding: 5px 10px;
     box-sizing: border-box;
     background-color: #ffffff; /* Petit bandeau blanc pour le logo */
 }
-
 .logo-img {
-    height: 40px; /* Taille réduite */
+    height: 20px; /* Taille réduite */
     width: auto;
-}
-
-/* --- AFFICHE --- */
-.affiche-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* --- FORMULAIRE (CORRIGÉ : TOUT EN BLANC) --- */
-.form-section {
-    padding: 25px;
-    text-align: center;
-}
-
-/* Le titre INSCRIPTION */
 h3 { 
-    color: #FFFFFF !important; 
-    font-size: 22px;
-    margin-bottom: 5px;
+    margin: 0; 
+    font-size: 22px; 
+    color: #ffffff; /* BLANC pour le titre INSCRIPTION */
+    letter-spacing: 1px;
 }
 
-/* Le petit texte en dessous */
-.subtitle { 
+subtitle { 
     color: #FFFFFF !important; 
     opacity: 0.9;
     font-size: 14px;
     margin-bottom: 20px;
+}
 }
 
 .field { 
@@ -64,36 +35,34 @@ h3 {
     margin-bottom: 15px; 
 }
 
-/* Nom, Email, Téléphone en BLANC */
 .field label { 
     display: block; 
-    color: #FFFFFF !important; 
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 13px; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    color: #ffffff; /* BLANC pour les étiquettes (Nom, Email...) */
 }
 
-/* Les cases blanches pour écrire */
 input {
     width: 100%;
     padding: 12px;
+    border: 1px solid #ddd;
     border-radius: 6px;
-    border: none;
     font-size: 16px;
     box-sizing: border-box;
-    background-color: #FFFFFF;
-    color: #333333; /* Texte tapé en noir pour la lisibilité */
+    background-color: #ffffff; /* On garde le fond des cases en blanc pour écrire dedans */
+    color: #333333; /* Le texte que l'utilisateur tape sera noir */
 }
 
-/* BOUTON TURQUOISE */
+/* LE BOUTON TURQUOISE */
 button {
     width: 100%;
-    background-color: #00c2cb;
-    color: #FFFFFF !important;
+    background-color: #00a8af;
+    color: white;
     border: none;
-    padding: 15px;
-    font-weight: bold;
+    padding: 16px;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
     margin-top: 10px;
