@@ -7,7 +7,6 @@
     box-sizing: border-box;
     background-color: white;
 }
-
 .logo-img {
     height: 45 px; /* Taille élégante pour le logo */
     width: auto;
@@ -18,16 +17,14 @@
     width: 100 %;
     overflow: hidden; /* Évite que l'image ne dépasse */
 }
-
 .main-affiche {
     width: 100 %;
     height: auto;
     display: block; /* Supprime l'espace vide sous l'image */
 }
-
 /* --- LE RESTE DU FORMULAIRE --- */
 .form-section {
-    padding: 30 px 20 px;
+    padding: 50 px 30 px;
     background: white;
     text-align: center;
 } 
