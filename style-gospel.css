@@ -61,11 +61,4 @@ button {
     cursor: pointer;
 }
 
-/* --- Mise en page du Logo à droite --- */
-.header-container {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100 %;
-    max-width: 500 px;
-    margin: 0 auto 20 px auto; /* Centre le bloc et ajoute de l'espace en bas */
+
