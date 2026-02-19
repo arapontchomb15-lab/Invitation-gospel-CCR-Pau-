@@ -1,0 +1,78 @@
+body {
+    background: #5a0b5a; /* Violet de l'affiche */
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 20 px;
+}
+
+.church-name { font-size: 0.9 rem; margin-bottom: 0; }
+.invite-text { font-size: 0.8 rem; margin-top: 5 px; }
+
+.big-title { font-size: 3.5 rem; margin: 0; line-height: 1; }
+.invitation-title { 
+    font-size: 3 rem; 
+    color: #ff9900; /* Orange */
+    margin: 0; 
+}
+
+.details-container {
+    display: flex;
+    margin: 20 px 0;
+    width: 100 %;
+    max-width: 400 px;
+}
+
+.blue-box { background: #0056b3; padding: 15 px; flex: 1; font-size: 0.9 rem; }
+.yellow-box { background: #ffcc00; color: black; padding: 15 px; flex: 1; }
+
+.form-card {
+    background: white;
+    color: #333;
+    padding: 25 px;
+    border-radius: 15 px;
+    width: 100 % ;
+    max-width: 400px;
+    margin-top: 20px;
+    box-shadow: 0 10 px 20 px  rgba (0,0,0,0.3);
+}
+
+input {
+    width: 100 %;
+    padding: 12 px;
+    margin: 10 px 0;
+    border: 1 px solid #ccc;
+    border-radius: 5 px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #00c2cb; /* Turquoise du bouton Scanne-moi */
+    color: white;
+    border: none;
+    padding: 15 px;
+    width: 100 %;
+    font-weight: bold;
+    border-radius: 5 px;
+    cursor: pointer;
+}
+
+/* --- Mise en page du Logo à droite --- */
+.header-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100 %;
+    max-width: 500 px;
+    margin: 0 auto 20 px auto; /* Centre le bloc et ajoute de l'espace en bas */
+}
+
+.logo-right {
+    width: 60 px; 
+    height: auto;
+    border-radius: 5 px; /* Optionnel : arrondit légèrement les bords du logo */
+}
