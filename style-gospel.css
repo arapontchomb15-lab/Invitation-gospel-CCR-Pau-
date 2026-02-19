@@ -1,3 +1,4 @@
+/* --- MISE EN PAGE GLOBALE --- */
 body {
     margin: 0;
     padding: 0;
@@ -10,67 +11,71 @@ body {
 .app-container {
     width: 100%;
     max-width: 450px;
-    background-color: #2e004f; /* Fond violet pour tout le bloc */
+    background-color: #2e004f; /* Ton fond violet */
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-/* LOGO : Taille moyenne et centré */
+/* --- LOGO MOYEN ET CENTRÉ --- */
 .header-logo {
     width: 100%;
-    background-color: #ffffff; /* Bandeau blanc pour le logo */
-    padding: 15px 0;
+    background-color: #ffffff;
+    padding: 10px 0;
     display: flex;
-    justify-content: center; /* Centre le logo */
+    justify-content: center;
 }
 
 .logo-img {
-    height: 60px; /* Taille moyenne (ajustable) */
+    height: 50px; /* Taille moyenne réglée ici */
     width: auto;
 }
 
-/* AFFICHE */
+/* --- IMAGE AFFICHE --- */
 .hero-image {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* SECTION FORMULAIRE */
+/* --- SECTION FORMULAIRE --- */
 .form-section {
     padding: 25px;
     text-align: center;
 }
 
-/* TEXTES EN BLANC PUR */
-h3 {
-    color: #FFFFFF ;
-    font-size: 22px;
-    margin-bottom: 5px;
+/* TITRE "INSCRIPTION" FORCÉ EN BLANC */
+.form-section h3 {
+    color: #FFFFFF !important;
+    font-size: 24px !important;
+    margin-bottom: 5px !important;
+    display: block !important;
 }
 
-.subtitle {
-    color: #FFFFFF ;
-    font-size: 14px;
-    margin-bottom: 25px;
-    opacity: 0.9;
+/* SOUS-TITRE FORCÉ EN BLANC */
+.form-section p.subtitle {
+    color: #FFFFFF !important;
+    font-size: 14px !important;
+    margin-bottom: 25px !important;
+    opacity: 1 !important; /* On enlève la transparence pour que ce soit bien blanc */
 }
 
+/* --- LES ÉTIQUETTES (NOM, EMAIL, TEL) --- */
 .field {
     text-align: left;
     margin-bottom: 15px;
 }
 
+/* ICI ON FORCE LE BLANC SUR LES TEXTES AU DESSUS DES CASES */
 .field label {
-    display: block;
-    color: #FFFFFF 
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 5px;
+    display: block !important;
+    color: #FFFFFF !important; 
+    font-weight: bold !important;
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
 }
 
-/* CHAMPS DE SAISIE */
+/* LES CASES (ON GARDE LE TEXTE TAPE EN NOIR POUR QUE LES GENS VOIENT CE QU'ILS ÉCRIVENT) */
 input {
     width: 100%;
     padding: 12px;
@@ -79,13 +84,14 @@ input {
     box-sizing: border-box;
     font-size: 16px;
     background-color: #FFFFFF;
+    color: #333333; 
 }
 
 /* BOUTON TURQUOISE */
 button {
     width: 100%;
     background-color: #00c2cb;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     border: none;
     padding: 15px;
     font-weight: bold;
@@ -93,4 +99,5 @@ button {
     border-radius: 6px;
     cursor: pointer;
     margin-top: 10px;
+}
 }
