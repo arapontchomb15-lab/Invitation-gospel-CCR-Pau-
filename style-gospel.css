@@ -69,10 +69,3 @@ button {
     width: 100 %;
     max-width: 500 px;
     margin: 0 auto 20 px auto; /* Centre le bloc et ajoute de l'espace en bas */
-}
-
-.logo-right {
-    width: 60 px; 
-    height: auto;
-    border-radius: 5 px; /* Optionnel : arrondit légèrement les bords du logo */
-}
