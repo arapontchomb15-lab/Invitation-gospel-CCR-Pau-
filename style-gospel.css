@@ -64,7 +64,7 @@ h3 {
 
 .field label {
     display: block;
-    color: #FFFFFF !important; /* Libellés en blanc */
+    color: #FFFFFF 
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 5px;
