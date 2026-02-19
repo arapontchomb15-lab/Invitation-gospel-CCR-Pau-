@@ -45,13 +45,13 @@ body {
 
 /* TEXTES EN BLANC PUR */
 h3 {
-    color: #FFFFFF !important;
+    color: #FFFFFF ;
     font-size: 22px;
     margin-bottom: 5px;
 }
 
 .subtitle {
-    color: #FFFFFF !important;
+    color: #FFFFFF ;
     font-size: 14px;
     margin-bottom: 25px;
     opacity: 0.9;
