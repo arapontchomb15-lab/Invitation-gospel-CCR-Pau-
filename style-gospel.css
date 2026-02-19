@@ -11,7 +11,7 @@ body {
 /* Le bloc qui contient tout */
 .main-wrapper {
     width: 100%;
-    max-width: 450px; /* Force le look "téléphone" même sur ordi */
+    max-width: 600px; /* Force le look "téléphone" même sur ordi */
     background-color: white;
     min-height: 100vh;
     display: flex;
@@ -23,7 +23,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 10px 20px;
+    padding: 40px 60px;
     box-sizing: border-box;
 }
 
@@ -40,7 +40,7 @@ body {
 
 /* Le formulaire */
 .form-container {
-    padding: 50px 30px;
+    padding: 100px 60px;
     text-align: center;
 }
 
