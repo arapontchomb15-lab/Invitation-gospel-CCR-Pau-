@@ -1,61 +1,35 @@
-/* RESET : On nettoie les marges par défaut */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #e9ecef; /* Fond gris clair pour faire ressortir le site */
-    display: flex;
-    justify-content: center; /* Centre le site horizontalement */
-    min-height: 100vh;
-}
-
-/* LE CONTENEUR (L'aspect téléphone) */
-.app-container {
-    width: 100%;
-    max-width: 480px; /* Taille fixe pour le rendu "App" */
-    background-color: white;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-}
-
-/* LE LOGO À DROITE */
-.header-logo {
-    width: 100%;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: flex-end; /* Aligne le logo à droite */
-    box-sizing: border-box;
-}
-
-.logo-img {
-    height: 55px;
-    width: auto;
-}
-
-/* L'AFFICHE FLUIDE */
-.affiche-wrapper {
-    width: 100%;
-    line-height: 0;
-}
-
-.affiche-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* LE FORMULAIRE */
+/* --- LA SECTION FORMULAIRE --- */
 .form-section {
     padding: 30px 25px;
     text-align: center;
+    background-color: #2e004f; /* On met le même violet que l'affiche pour l'unité */
 }
 
-h3 { margin: 0; font-size: 20px; color: #333; }
-.subtitle { font-size: 14px; color: #777; margin-bottom: 25px; }
+h3 { 
+    margin: 0; 
+    font-size: 22px; 
+    color: #ffffff; /* BLANC pour le titre INSCRIPTION */
+    letter-spacing: 1px;
+}
 
-.field { text-align: left; margin-bottom: 15px; }
-.field label { display: block; font-size: 13px; font-weight: bold; margin-bottom: 5px; color: #555; }
+.subtitle { 
+    font-size: 14px; 
+    color: #eeeeee; /* Blanc cassé pour le sous-titre */
+    margin-bottom: 25px; 
+}
+
+.field { 
+    text-align: left; 
+    margin-bottom: 15px; 
+}
+
+.field label { 
+    display: block; 
+    font-size: 13px; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    color: #ffffff; /* BLANC pour les étiquettes (Nom, Email...) */
+}
 
 input {
     width: 100%;
@@ -64,6 +38,8 @@ input {
     border-radius: 6px;
     font-size: 16px;
     box-sizing: border-box;
+    background-color: #ffffff; /* On garde le fond des cases en blanc pour écrire dedans */
+    color: #333333; /* Le texte que l'utilisateur tape sera noir */
 }
 
 /* LE BOUTON TURQUOISE */
