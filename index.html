@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grande Invitation - CCR Pau</title>
     <link rel="stylesheet" href="style-gospel.css">
-    <div class="affiche-container">
-    <img src="affiche.jpg" alt="Affiche Grande Invitation" class="affiche-img">
-</div>
 </head>
 <body>
-<div class="header-container">
-    <header>
-        <p class="church-name">LE CENTRE CHRÉTIEN DE RÉVEIL PAU</p>
-        <p class="invite-text">VOUS INVITE À SON ÉVÈNEMENT SPÉCIAL</p>
-        
-        <div class="hero">
-            <h1 class="big-title">LA GRANDE</h1>
-            <h2 class="invitation-title">INVITATION</h2>
+
+    <div class="container">
+        <div class="image-wrapper">
+            <img src="affiche.jpg" alt="Affiche Grande Invitation" class="main-affiche">
         </div>
 
-        <div class="details-container">
-            <div class="blue-box">CHAQUE DIMANCHE</div>
-            <div class="yellow-box">09H / 11H / 14H30</div>
+        <div class="form-section">
+            <h3>INSCRIPTION</h3>
+            <p class="subtitle">Veuillez remplir vos informations ci-dessous</p>
+
+            <form id="gospelForm" action="https://formspree.io/f/VOTRE_ID" method="POST">
+                <div class="input-box">
+                    <label>Nom complet</label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom et prénom" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="votre@email.com" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Téléphone (Optionnel)</label>
+                    <input type="tel" name="telephone" placeholder="06 00 00 00 00">
+                </div>
+
+                <button type="submit" id="btnEnvoyer">JE M'INSCRIS</button>
+            </form>
         </div>
-        <p class="address">📍 81 Avenue du Général Leclerc, 64000 PAU</p>
-    </header>
-    <div class="form-card">
-        <h3>INSCRIPTION</h3>
-        <form id="gospelForm" action="https://formspree.io/f/https://formspree.io/f/maqdbgze" method="POST">
-            <input type="text" name="nom" id="nom" placeholder="Nom et Prénom" required>
-            <input type="email" name="email" id="email" placeholder="Votre Email" required>
-            <input type="tel" name="telephone" placeholder="Téléphone (Optionnel)">
-            <button type="submit" id="btnEnvoyer">JE M'INSCRIS</button>
-        </form>
     </div>
 
     <script src="script-gospel.js"></script>
