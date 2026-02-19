@@ -39,7 +39,7 @@ input {
     font-size: 16px;
     box-sizing: border-box;
     background-color: #ffffff; /* On garde le fond des cases en blanc pour écrire dedans */
-    color: #333333; /* Le texte que l'utilisateur tape sera noir */
+    color: #ffffff; /* Le texte que l'utilisateur tape sera noir */
 }
 
 /* LE BOUTON TURQUOISE */
